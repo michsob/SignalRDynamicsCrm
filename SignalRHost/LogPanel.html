@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamics CRM Log Panel</title>
+    <meta charset="utf-8" />
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Dynamics CRM Log Panel</h2>
+        <table border="1" id="logtable">
+            <tr>
+                <th>Name</th>
+                <th>Modified On</th>
+            </tr>
+            <tr>
+                <td>test</td>
+                <td>123</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/Scripts/jquery-1.6.4.min.js"></script>
+    <script src="/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="http://serverurl/signalr/hubs"></script>
+    <script src="LogPanel.js"></script>
+</body>
+</html>
